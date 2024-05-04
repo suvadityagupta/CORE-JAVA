@@ -8,15 +8,17 @@
 //we can also call the variables of parent class in child class
 //To call the class we have to make and object of that class
 
-public class Inheritance {
+public class Inheritance { 
     public static void main(String[] args) {
         // Calc obj = new Calc();
-        AdvCalc obj = new AdvCalc();
+        VeryAdvCalc obj = new VeryAdvCalc(); //Multi level inheritance 
         int r1 = obj.add(10, 5);
         int r2 = obj.sub(10, 5);
         int r3 = obj.mul(10, 5);
         int r4 = obj.div(10, 5);
-        System.out.println(r1 + " " + r2 + " " + r3 + " " + r4 );      
+        double r5 = obj.power(2,4);
+        
+        System.out.println(r1 + " " + r2 + " " + r3 + " " + r4 + " " + r5);      
 
     }
 }
